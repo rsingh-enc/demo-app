@@ -55,6 +55,7 @@ This repository contains a React application with a Repository List page and a R
 
     ```
     VITE_API_URL=api_url
+    VITE_BASE_PATH=/demo-app/
     ```
 
 4. **Start the Application:**
