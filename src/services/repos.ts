@@ -14,5 +14,5 @@ export const getRepos = async () => {
  * @returns
  */
 export const getRepoDetail = async (params: RepoServiceParams) => {
-    return await client.get(`/detail.json?name=${params?.name}`);
+    return await client.get(`/repos/godaddy/${params?.name}`);
 };
