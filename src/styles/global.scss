@@ -1,0 +1,75 @@
+@use 'variables' as *;
+$elements-colors: (
+    1: $color-1,
+    2: $color-2,
+    3: $color-3,
+    4: $color-4,
+);
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: $font-faimly;
+    line-height: 1.5;
+    font-weight: $font-weight-400;
+    font-size: $font-size;
+    margin: 0;
+    a {
+        font-weight: $font-weight-600;
+        color: $link-color;
+        text-decoration: inherit;
+    }
+    a:hover {
+        color: $link-color;
+        text-decoration: underline;
+    }
+
+    .container {
+        width: 50%;
+        margin: 40px auto;
+    }
+    .error {
+        color: $error;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 20px;
+        background: $color-5;
+        border-radius: 5px;
+        padding: 15px;
+        h3 {
+            cursor: pointer;
+        }
+    }
+    .detail {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .elements {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        font-size: 14px;
+        color: #ffffff;
+        li {
+            border-radius: 5px;
+            padding: 5px;
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                    background: map-get($elements-colors, $i);
+                }
+            }
+        }
+    }
+    a.back-to-home {
+        font-size: 13px;
+        color: $color-6;
+        &:hover {
+            color: $color-6;
+        }
+    }
+}
