@@ -12,6 +12,7 @@ This repository contains a React application with a Repository List page and a R
 -   **Sass**: Used to create preprocessed CSS.
 -   **Axios**: Used to make API calls, similar to `fetch`.
 -   **Vite**: Used to compile the React.js application and optimize the chunks.
+-   **React Testing Library**: Used to write unit tests for React components.
 
 ### Folder and File Descriptions
 
@@ -27,6 +28,9 @@ This repository contains a React application with a Repository List page and a R
     -   **App.tsx**: Contains all routes of the application.
     -   **main.tsx**: The bootstrap file of the application.
 -   **index.html**: Preview of the application.
+-   **tests/**: Contains the unit tests for the components.
+    -   **mockData.ts**: Contains the mock data for tests.
+    -   **components/.ts**: Contains the component tests.
 -   **.env.example**: Contains example environment variables.
 -   **eslint.config.js**: ESLint configuration.
 -   **.prettierrc**: Configuration for Prettier.
@@ -72,3 +76,4 @@ This repository contains a React application with a Repository List page and a R
     ```bash
     npm run preview
     ```
+7. **App URL:** https://rsingh-enc.github.io/demo-app/
